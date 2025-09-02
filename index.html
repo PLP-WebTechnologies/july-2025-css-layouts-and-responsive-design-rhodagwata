@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Layout Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main grid container -->
+    <div class="page-grid">
+        
+        <!-- Header with flexbox navigation -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>My Portfolio</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile menu button (would need JS in real project) -->
+                <div class="mobile-menu-btn">☰</div>
+            </div>
+        </header>
+
+        <!-- Main content area -->
+        <main class="main-content">
+            <!-- Hero section with flexbox -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to My Learning Journey</h2>
+                    <p>I'm practicing responsive web design using CSS Grid and Flexbox. This page adapts to different screen sizes!</p>
+                    <button class="cta-button">View My Work</button>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-img">Hero Image</div>
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section id="about" class="about-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a student learning web development and really enjoying CSS layouts. Grid and Flexbox are powerful tools for creating responsive designs.</p>
+                        <p>This page uses CSS Grid for the main layout structure and Flexbox for component-level alignment. Pretty cool how they work together!</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3</h3>
+                            <p>Languages</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2</h3>
+                            <p>Months Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects section with flexbox cards -->
+            <section id="projects" class="projects-section">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">Project 1</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>HTML Basics</h3>
+                            <p>My first website using semantic HTML5 elements. Learned about proper document structure.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">Semantic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">Project 2</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Form Practice</h3>
+                            <p>Registration form with validation. Practiced different input types and accessibility features.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">Forms</span>
+                                <span class="tag">Validation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">Project 3</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>CSS Styling</h3>
+                            <p>Learning the box model and basic styling. Understanding margins, padding, and borders.</p>
+                            <div class="project-tags">
+                                <span class="tag">CSS</span>
+                                <span class="tag">Box Model</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">Project 4</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Responsive Layout</h3>
+                            <p>This current project! Learning Grid, Flexbox, and responsive design principles.</p>
+                            <div class="project-tags">
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">Flexbox</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Skills I'm Learning</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: rhodaagwata@gmail.com</p>
+                    <p>Phone: +254726784984</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My Portfolio - Still learning and loving it!</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
